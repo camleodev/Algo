@@ -31,6 +31,7 @@ public class TrouverLaDifference {
 
     public static char findTheDifference(String s, String t) {
        int diff = 0;
+       System.out.println(t.toCharArray().toString());
        for(char c : t.toCharArray()){
            diff += c;
        }
