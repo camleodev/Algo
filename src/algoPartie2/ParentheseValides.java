@@ -1,5 +1,6 @@
 package algoPartie2;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Stack;
@@ -18,7 +19,7 @@ public class ParentheseValides {
 
         Input: s = "(]"
         Output: false*/
-        String s  = "([)]";
+        String s  = "([])";
 
         System.out.println(isValid(s));
 
@@ -32,7 +33,7 @@ public class ParentheseValides {
         map.put('{', '}');
         for (char c : s.toCharArray()) {
             if (map.containsKey(c)) {
-                stack.push(map.get(c)); //stack )
+                stack.push(map.get(c));
             }
             else if (stack.empty() || stack.pop() != c) return false;
         }
