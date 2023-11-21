@@ -7,21 +7,32 @@ import java.util.List;
 
 public class ClassPhotos {
     public static void main(String[] args) {
+      /*  All students wearing red shirts must be in the same row.
+      * All students wearing blue shirts must be in the same row.
+      *
+    Each student in the back row must be strictly taller than the student
+    directly in front of them in the front row.
+    *
+    *
+  You're given two input arrays: one containing the heights of all the students
+  with red shirts and another one containing the heights of all the students
+  with blue shirts. These arrays will always have the same length, and each
+  height will be a positive integer. Write a function that returns whether or
+  not a class photo that follows the stated guidelines can be taken.
+  */
+        //"redShirtHeights": [5, 8, 1, 3, 4],
+        //"blueShirtHeights": [6, 9, 2, 4, 5]
 
-        //"redShirtHeights": [5, 8, 1, 3, 4],               1, 3 , 4 , 5, 8
-        //          "blueShirtHeights": [6, 9, 2, 4, 5]   2, 4 ,5, 6, 9
+        //OUTPUT true
 
-      /*  [5, 6, 7, 2, 3, 1, 2, 3],
-        "redShirtHeights": [1, 1, 1, 1, 1, 1, 1, 1]*/
 
         ArrayList<Integer> redShirtHeights = new ArrayList<>();
-      /*  redShirtHeights.add(5); redShirtHeights.add(8); redShirtHeights.add(1); redShirtHeights.add(3);
-        redShirtHeights.add(4);*/
-        redShirtHeights.add(5); redShirtHeights.add(4);
+        redShirtHeights.add(5); redShirtHeights.add(8); redShirtHeights.add(1); redShirtHeights.add(3);
+        redShirtHeights.add(4);
+
         ArrayList<Integer> blueShirtHeights = new ArrayList<>();
-     /*   blueShirtHeights.add(6);  blueShirtHeights.add(9);  blueShirtHeights.add(2);  blueShirtHeights.add(4);
-        blueShirtHeights.add(5);*/
-        blueShirtHeights.add(5); blueShirtHeights.add(6);
+        blueShirtHeights.add(6);  blueShirtHeights.add(9);  blueShirtHeights.add(2);  blueShirtHeights.add(4);
+        blueShirtHeights.add(5);
         classPhotos(redShirtHeights,blueShirtHeights);
 
     }
